@@ -4,11 +4,13 @@
     <link rel="stylesheet" type="text/css" href="gantt.css">
     <script src="gantt.js" ></script>
   </head>
-  <body>
-    <div> username: <input type="text" value="" id="username"> password <input type="password" value="" id="password"><button onclick="load()">Get Chart</button></div>
+  <body onload="load()">
+    <div id="login" style="display:none"> username: <input type="text" value="" id="username"> password <input type="password" value="" id="password"><button onclick="getchart()">Get Chart</button></div>
     <div id="header">
     </div>
     <div id="output">
+    </div>
+    <div id="json_display">
     </div>
   </body>
 </html>
