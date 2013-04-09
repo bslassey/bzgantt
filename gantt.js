@@ -58,7 +58,7 @@ function getDivForBug(bugObj, bugDiv, subDiv, depth) {
     }
     var summarySpan = document.createElement("span");
     summarySpan.className = "summary";
-    summarySpan.style.width = (340 - (depth * 15)) + "px";
+    summarySpan.style.width = (340 - (depth * 10)) + "px";
     var bugLink = document.createElement("a");
     bugLink.href = "https://bugzilla.mozilla.org/show_bug.cgi?id=" + bugObj.bugNum;
     bugLink.innerHTML = bugObj.bugNum;
