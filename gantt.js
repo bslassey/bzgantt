@@ -7,8 +7,11 @@ var data;
 var gOutstandingRequests = 0;
 
 function log(str) {
-    output_pre.innerHTML += str;
-    output_pre.innerHTML += "\n"
+    if (console) {
+	if (console.log) {
+	    console.log(str);
+	}
+    }
 }
 function load() {
     var query = window.location.search.substring(1);
